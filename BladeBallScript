@@ -1,0 +1,6 @@
+local MyTable = {}
+
+while true do
+	table.insert(MyTable, "Hello World!")	
+	print("Hello World!")
+end
