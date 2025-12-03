@@ -1,0 +1,5 @@
+while true do
+	print("Hello World!")
+end
+
+-- credit: delovoi_chelovek007
