@@ -15,6 +15,7 @@ local x9 = x8()
 local xA = x9:FindFirstChild("Humanoid")
 local xB = x9:FindFirstChild("HumanoidRootPart")
 
+
 local xC = x1:GetObjects("rbxassetid://118171760564865")[1]
 xC.Parent = x6.PlayerGui
 
@@ -67,15 +68,15 @@ end)
 
 xF.InputBegan:Connect(function(i)
 	if (i.UserInputType == Enum.UserInputType.MouseButton1
-	or i.UserInputType == Enum.UserInputType.Touch)
-	and x5.KeyboardEnabled then
+		or i.UserInputType == Enum.UserInputType.Touch)
+		and x5.KeyboardEnabled then
 		xM = true
 	end
 end)
 
 x5.InputEnded:Connect(function(i)
 	if i.UserInputType == Enum.UserInputType.MouseButton1
-	or i.UserInputType == Enum.UserInputType.Touch then
+		or i.UserInputType == Enum.UserInputType.Touch then
 		xM = false
 	end
 end)
@@ -98,8 +99,7 @@ x4.RenderStepped:Connect(function()
 	end
 
 	if xK and xB and xA then
-		xB.AssemblyLinearVelocity = xA.MoveDirection * xN
+		xB.AssemblyLinearVelocity = xB.CFrame.LookVector * xN
 	end
 end)
-
--- my discord: serpol39
+--???
