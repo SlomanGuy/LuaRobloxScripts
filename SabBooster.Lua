@@ -34,7 +34,7 @@ local xK = false
 local xL = false
 local xM = false
 
-local xN = 29.8
+local xN = 29
 local xO = 80
 
 local xP = Color3.fromRGB(51,137,218)
